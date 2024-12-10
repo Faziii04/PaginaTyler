@@ -2,6 +2,10 @@
 body {
   background: linear-gradient(135deg, #2c2c54, #1b1b2f);
   color: #f5f6fa;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 /* Header Styles */
@@ -97,7 +101,6 @@ body {
   box-shadow: 0 5px 15px rgba(106, 17, 203, 0.3);
 }
 
-
 /* Main Section Styles */
 main {
   padding: 2rem 0;
@@ -120,11 +123,13 @@ main {
   background: linear-gradient(45deg, #6a11cb, #2575fc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 
 .welcome-section p {
   font-size: 1.2rem;
   color: #b3b3b3;
+  text-align: center;
 }
 
 /* Carousel Section */
@@ -197,12 +202,14 @@ main {
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .section-subtitle {
   font-size: 1rem;
   color: #b3b3b3;
   margin-top: 0.5rem;
+  text-align: center;
 }
 
 .news-card {
@@ -210,11 +217,12 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   overflow: hidden;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .news-card:hover {
   transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(106, 17, 203, 0.2);
 }
 
 .card-img-wrapper {
@@ -266,6 +274,8 @@ main {
   padding: 0.5rem 1.5rem;
   border-radius: 25px;
   font-size: 0.9rem;
+  color: white;
+  text-decoration: none;
   transition: all 0.3s ease;
 }
 
@@ -284,11 +294,11 @@ main {
   .carousel-caption h2 {
     font-size: 2rem;
   }
-  
+
   .carousel-caption p {
     font-size: 1.2rem;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
@@ -298,16 +308,16 @@ main {
   .welcome-section {
     padding: 2rem;
   }
-  
+
   .carousel-caption {
     left: 2rem;
     bottom: 2rem;
   }
-  
+
   .carousel-caption h2 {
     font-size: 1.5rem;
   }
-  
+
   .carousel-caption p {
     font-size: 1rem;
   }
@@ -317,17 +327,16 @@ main {
   .welcome-section h1 {
     font-size: 1.8rem;
   }
-  
+
   .welcome-section p {
     font-size: 1rem;
   }
-  
+
   .carousel-caption {
     left: 1rem;
     bottom: 1rem;
   }
 }
-
 
 /* Footer Styles */
 footer {
@@ -422,24 +431,24 @@ footer {
     padding: 1rem 0;
     gap: 0.5rem;
   }
-  
+
   .custom-header .navbar-nav .nav-link {
     margin: 0.5rem 0;
   }
-  
+
   .custom-header .form-control {
     margin: 1rem 0;
   }
-  
+
   .navbar-toggler {
     border: none;
     padding: 0.5rem;
   }
-  
+
   .navbar-toggler:focus {
     box-shadow: none;
   }
-  
+
   .footer-content {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -450,3 +459,4 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
