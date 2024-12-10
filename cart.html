@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Cart</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <img src="images/leaugeLogo-removebg-preview.png" height="75" width="150">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-around w-100">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html"><h1>Inicio</h1></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="page2.html"><h1>Campeones</h1></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="page3.html"><h1>Items</h1></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="cart.html"><h1>Carrito</h1></a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <main>
+            <section class="h-100 gradient-custom">
+                <div class="container py-5">
+                  <div class="row d-flex justify-content-center my-4">
+                    <div class="col-md-8">
+                      <div class="card mb-4">
+                        <div class="card-header py-3">
+                          <h5 class="mb-0">Compra de Campeones</h5>
+                        </div>
+                        <div class="card-body">
+                          <!-- Single item -->
+                          <div class="row">
+                            <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                              <!-- Image -->
+                              <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                                <img src="images/Varus_Render.webp"
+                                  class="w-100" />
+                                <a href="#!">
+                                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                </a>
+                              </div>
+                              <!-- Image -->
+                            </div>
+              
+                            <div class="col-lg-9 col-md-12 mb-4 mb-lg-0">
+                                <h5>Varus</h5>
+                                <p>Price: <span class="price">3600</span> Riot Points</p>
+                                <button class="heart-button" onclick="addToCart('images/Varus_Render.webp', 'Varus', 3600)">❤️</button>
+                            </div>
+                           
+                              <!-- Price -->
+                              
+                              <!-- Price -->
+                            </div>
+                          <hr class="my-4" />
+              
+                          <!-- Single item -->
+                          <div class="row">
+                            <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                              <!-- Image -->
+                              <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                                <img src="images/Swain_Render.webp"
+                                  class="w-100" />
+                                <a href="#!">
+                                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                </a>
+                              </div>
+                              <!-- Image -->
+                            </div>
+              
+                            <div class="col-lg-9 col-md-12 mb-4 mb-lg-0">
+                                <h5>Swain</h5>
+                                <p>Price: <span class="price">1800</span> Riot Points</p>
+                                <button class="heart-button" onclick="addToCart('images/Swain_Render.webp', 'Swain', 1800)">❤️</button>
+                            </div>
+                           
+                          </div>
+                          <hr class="my-4" />
+              
+                          <!-- Single item -->
+                          <div class="row">
+                            <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                              <!-- Image -->
+                              <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                                <img src="images/lee sin 2.webp"
+                                  class="w-100" />
+                                <a href="#!">
+                                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                </a>
+                              </div>
+                              <!-- Image -->
+                            </div>
+              
+                            <div class="col-lg-9 col-md-12 mb-4 mb-lg-0">
+                                <h5>Lee Sin</h5>
+                                <p>Price: <span class="price">1200</span> points</p>
+                                <button class="heart-button" onclick="addToCart('images/lee sin 2.webp', 'Lee Sin', 1200)">❤️</button>
+                              </div>
+                           
+                              <!-- Price -->
+                              
+                              <!-- Price -->
+                            </div>
+                            <hr class="my-4" />
+              
+                          <!-- Single item -->
+                          <div class="row">
+                            <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                              <!-- Image -->
+                              <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                                <img src="images/sivir 2.webp"
+                                  class="w-100" />
+                                <a href="#!">
+                                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                </a>
+                              </div>
+                              <!-- Image -->
+                            </div>
+              
+                            <div class="col-lg-9 col-md-12 mb-4 mb-lg-0">
+                                <h5>Sivir</h5>
+                                <p>Price: <span class="price">450</span> Riot Points</p>
+                                <button class="heart-button" onclick="addToCart('images/sivir 2.webp', 'Sivir', 450)">❤️</button>
+                            </div>
+                           
+                              <!-- Price -->
+                              
+                              <!-- Price -->
+                            </div>
+                          <!-- Single item -->
+                        </div>
+                      </div>
+                          </div>
+                          
+                          <!-- Single item -->
+                        </div>
+                      </div>
+                      
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 ms-5">
+                        <div class="card mb-5">
+                          <div class="card-header py-3">
+                            <h5 class="mb-0">Resumen</h5>
+                          </div>
+                          <div class="card-body">
+                            <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg btn-block" onclick="window.location.href='completePurchase.html'">
+                              Ir al checkout
+                            </button>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </section>
+        </main>
+        <footer>
+            <footer>
+                <footer class=" text-center">
+                    <div class="container p-4 pb-0">
+                      <section class="mb-4">                
+                        <a
+                        data-mdb-ripple-init
+                          class="btn text-white btn-floating m-1"
+                          style="background-color: #3b5998;"
+                          href="https://www.facebook.com/"
+                          role="button">
+                          <i class="bi bi-facebook"></i>
+                            </a>                   
+                        <a
+                          data-mdb-ripple-init
+                          class="btn text-white btn-floating m-1"
+                          style="background-color: #55acee;"
+                          href="https://x.com/?logout=1731016681761"
+                          role="button"
+                          ><i class="bi bi-twitter"></i
+                        ></a>                   
+                        <a
+                          data-mdb-ripple-init
+                          class="btn text-white btn-floating m-1"
+                          style="background-color: #dd4b39;"
+                          href="https://www.google.co.uk/"
+                          role="button"
+                          ><i class="bi bi-google"></i
+                        ></a>                   
+                        <a
+                          data-mdb-ripple-init
+                          class="btn text-white btn-floating m-1"
+                          style="background-color: #ac2bac;"
+                          href="https://www.instagram.com/?hl=en"
+                          role="button"
+                          ><i class="bi bi-instagram"></i
+                        ></a>             
+                        <a
+                          data-mdb-ripple-init
+                          class="btn text-white btn-floating m-1"
+                          style="background-color: #0082ca;"
+                          href="https://www.linkedin.com/"
+                          role="button"
+                          ><i class="bi bi-linkedin"></i
+                        ></a>               
+                        <a
+                          data-mdb-ripple-init
+                          class="btn text-white btn-floating m-1"
+                          style="background-color: #333333;"
+                          href="https://github.com/"
+                          role="button"
+                          ><i class="bi bi-github"></i
+                        ></a>
+                      </section>
+                    </div>
+                  </footer>
+            </footer>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script>
+          function addToCart(image, name, price) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({ image, name, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert('Campeon añadido al carrito');
+          }
+        </script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
