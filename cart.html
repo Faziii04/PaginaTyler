@@ -4,8 +4,8 @@
     <title>Cart</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles3.css">
 </head>
 <body>
@@ -40,108 +40,116 @@
     </nav>
   </header>
     <main>
-        <section class="h-100 gradient-custom">
-            <div class="container py-5">
-                <div class="row d-flex justify-content-center my-4">
-                    <div class="col-md-8">
-                        <div class="card mb-4">
-                            <div class="card-header py-3">
-                                <h5 class="mb-0">Compra de Campeones</h5>
+      <div class="container shop-container">
+        <h1 class="section-title">Champion Shop</h1>
+        
+        <div class="row">
+            <!-- Champions Grid -->
+            <div class="col-lg-8">
+                <div class="row">
+                    <!-- Varus -->
+                    <div class="col-md-6 mb-4">
+                        <div class="champion-card">
+                            <div class="champion-image-container">
+                                <img src="images/Varus_Render.webp" class="champion-image" alt="Varus">
                             </div>
-                            <div class="card-body">
-                                <!-- Single item -->
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                                        <!-- Image -->
-                                        <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
-                                            <img src="images/Varus_Render.webp" class="w-100" />
-                                            <a href="#!">
-                                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
-                                            </a>
-                                        </div>
-                                        <!-- Image -->
+                            <div class="champion-info">
+                                <h3 class="champion-name">Varus</h3>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="champion-price">
+                                        <img src="images/rp-icon.png" class="rp-icon" alt="RP">
+                                        3600 RP
                                     </div>
-                                    <div class="col-lg-9 col-md-12 mb-4 mb-lg-0">
-                                        <h5>Varus</h5>
-                                        <p>Price: <span class="price">3600</span> Riot Points</p>
-                                        <button class="heart-button" onclick="addToCart('images/Varus_Render.webp', 'Varus', 3600)">❤️</button>
-                                    </div>
-                                </div>
-                                <hr class="my-4" />
-                                <!-- Single item -->
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                                        <!-- Image -->
-                                        <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
-                                            <img src="images/Swain_Render.webp" class="w-100" />
-                                            <a href="#!">
-                                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
-                                            </a>
-                                        </div>
-                                        <!-- Image -->
-                                    </div>
-                                    <div class="col-lg-9 col-md-12 mb-4 mb-lg-0">
-                                        <h5>Swain</h5>
-                                        <p>Price: <span class="price">1800</span> Riot Points</p>
-                                        <button class="heart-button" onclick="addToCart('images/Swain_Render.webp', 'Swain', 1800)">❤️</button>
-                                    </div>
-                                </div>
-                                <hr class="my-4" />
-                                <!-- Single item -->
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                                        <!-- Image -->
-                                        <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
-                                            <img src="images/lee sin 2.webp" class="w-100" />
-                                            <a href="#!">
-                                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
-                                            </a>
-                                        </div>
-                                        <!-- Image -->
-                                    </div>
-                                    <div class="col-lg-9 col-md-12 mb-4 mb-lg-0">
-                                        <h5>Lee Sin</h5>
-                                        <p>Price: <span class="price">1200</span> points</p>
-                                        <button class="heart-button" onclick="addToCart('images/lee sin 2.webp', 'Lee Sin', 1200)">❤️</button>
-                                    </div>
-                                </div>
-                                <hr class="my-4" />
-                                <!-- Single item -->
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                                        <!-- Image -->
-                                        <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
-                                            <img src="images/sivir 2.webp" class="w-100" />
-                                            <a href="#!">
-                                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
-                                            </a>
-                                        </div>
-                                        <!-- Image -->
-                                    </div>
-                                    <div class="col-lg-9 col-md-12 mb-4 mb-lg-0">
-                                        <h5>Sivir</h5>
-                                        <p>Price: <span class="price">450</span> Riot Points</p>
-                                        <button class="heart-button" onclick="addToCart('images/sivir 2.webp', 'Sivir', 450)">❤️</button>
-                                    </div>
+                                    <button class="wishlist-btn" onclick="addToCart('Varus', 3600)">
+                                        Add to Wishlist ❤️
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 ms-5">
-                        <div class="card mb-5">
-                            <div class="card-header py-3">
-                                <h5 class="mb-0">Resumen</h5>
+
+                    <!-- Swain -->
+                    <div class="col-md-6 mb-4">
+                        <div class="champion-card">
+                            <div class="champion-image-container">
+                                <img src="images/Swain_Render.webp" class="champion-image" alt="Swain">
                             </div>
-                            <div class="card-body">
-                                <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg btn-block" onclick="window.location.href='completePurchase.html'">
-                                    Ir al checkout
-                                </button>
+                            <div class="champion-info">
+                                <h3 class="champion-name">Swain</h3>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="champion-price">
+                                        <img src="images/rp-icon.png" class="rp-icon" alt="RP">
+                                        1800 RP
+                                    </div>
+                                    <button class="wishlist-btn" onclick="addToCart('Swain', 1800)">
+                                        Add to Wishlist ❤️
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lee Sin -->
+                    <div class="col-md-6 mb-4">
+                        <div class="champion-card">
+                            <div class="champion-image-container">
+                                <img src="images/lee sin 2.webp" class="champion-image" alt="Lee Sin">
+                            </div>
+                            <div class="champion-info">
+                                <h3 class="champion-name">Lee Sin</h3>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="champion-price">
+                                        <img src="images/rp-icon.png" class="rp-icon" alt="RP">
+                                        1200 RP
+                                    </div>
+                                    <button class="wishlist-btn" onclick="addToCart('Lee Sin', 1200)">
+                                        Add to Wishlist ❤️
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sivir -->
+                    <div class="col-md-6 mb-4">
+                        <div class="champion-card">
+                            <div class="champion-image-container">
+                                <img src="images/sivir 2.webp" class="champion-image" alt="Sivir">
+                            </div>
+                            <div class="champion-info">
+                                <h3 class="champion-name">Sivir</h3>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="champion-price">
+                                        <img src="images/rp-icon.png" class="rp-icon" alt="RP">
+                                        450 RP
+                                    </div>
+                                    <button class="wishlist-btn" onclick="addToCart('Sivir', 450)">
+                                        Add to Wishlist ❤️
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+
+            <!-- Cart Summary -->
+            <div class="col-lg-4">
+                <div class="cart-summary">
+                    <h2 class="summary-title">Cart Summary</h2>
+                    <div id="cart-items" class="cart-items">
+                        <!-- Cart items will be dynamically added here -->
+                    </div>
+                    <div class="cart-total mt-4">
+                        <h4>Total: <span id="cart-total">0 RP</span></h4>
+                    </div>
+                    <button class="checkout-btn mt-3" onclick="window.location.href='checkout.html'">
+                        Proceed to Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>x
     </main>
     <footer>
       <div class="footer-content">
